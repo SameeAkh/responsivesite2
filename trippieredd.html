@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="css/trippieredd-styles.css">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+
+    <title>Trippie Redd Image Gallery</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"> </a><img src="responsivesite-images/background-fullscreen.jpg" alt="clcik here to return to homepage" title="click here to return to homepage">
+        <h2>My Crazy Site</h2>
+        <button id="showNavigation" data-visible="false"></button>
+        <i onclick="showMe()" id="hamburger-icon" iclass="fa-solid fa-bars"></i>
+        <i onclick="hideMenu()" id="x-icon" class="fa-solid fa-xmark"></i>
+        <nav id="navigation" data-visible="false">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trippieredd.html">image Gallery</a></li>
+                <li><a href="videogallery.html">Video Galler</a></li>
+                <li><a href="slideshow.html">image Carousel</a></li>
+            </ul>
+        </nav>
+     </header>
+    <main>
+        <div class="row"> 
+            <div class="column">
+              <img src="images/1.jpg" alt="">
+              <img src="images/2.jpg" alt="">
+              <img src="images/3.jpg" alt="">
+              <img src="images/4.jpg" alt="">
+              <img src="images/5.jpg" alt="">
+            </div>
+            
+            <div class="column">
+              <img src="images/6.jpg" alt="">
+              <img src="images/7.jpg" alt="">
+              <img src="images/8.jpg" alt="">
+              <img src="images/9.jpg" alt="">
+              <img src="images/10.jpg" alt="">
+            </div> 
+             
+            <div class="column">
+              <img src="images/11.jpg" alt="">
+              <img src="images/12.jpg" alt="">
+              <img src="images/13.jpg" alt="">
+              <img src="images/14.jpg" alt="">
+              <img src="images/15.jpg" alt="">
+            </div>
+            
+            <div class="column">
+                <img src="images/16.jpg" alt="">
+                <img src="images/17.jpg" alt="">
+                <img src="images/18.jpg" alt="">
+                <img src="images/19.jpg" alt="">
+                <img src="images/20.jpg" alt="">
+              
+            </div>
+          </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyright"></span> Samee Akhouzine </p>
+    </footer> 
+
+     <!-- Javascript - Get Current Year for the Footer -->
+     <script>
+        window.onload = function() {
+            var d = new Date();
+            document.getElementById("copyright").innerHTML = d.getFullYear();
+        }
+    </script>
+</body>
+</html>
